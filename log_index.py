@@ -38,7 +38,7 @@ class Indices:
         create_table_query = f"""
         CREATE TABLE IF NOT EXISTS `{self.index_name_db}` (
             `id` INT NOT NULL AUTO_INCREMENT,
-            `epoch_nanos` INT,
+            `epoch_nanos` BIGINT,
             `price` FLOAT,
             PRIMARY KEY (`id`)
         ) ENGINE=INNODB;
